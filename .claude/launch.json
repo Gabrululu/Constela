@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "constela-web",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["dev"],
+      "port": 3000
+    },
+    {
+      "name": "constela-compiler",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["dev:compiler"],
+      "port": 8787
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+/* Tokens de la guía de marca de Stellar 2026. */
+@theme {
+  --color-gold: #fdda24;
+  --color-ink: #0f0f0f;
+  --color-snow: #f6f7f8;
+  --color-sand: #d6d2c4;
+  --color-lilac: #b7ace8;
+  --color-teal: #00a7b5;
+  --color-navy: #002e5d;
+
+  /* Neutros derivados de ink y snow para superficies y texto con contraste AA. */
+  --color-surface: #171717;
+  --color-raised: #212121;
+  --color-line: #303030;
+  --color-muted: #a8a8a8;
+  --color-danger: #ff8a80;
+  --color-ok: #4fd1c5;
+
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-serif: var(--font-lora), Georgia, serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+}
+
+html {
+  color-scheme: dark;
+  background: var(--color-ink);
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-snow);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+/* Textura de puntos de la marca, siempre en lila sobre negro. */
+.halftone {
+  background-image: radial-gradient(var(--color-lilac) 1px, transparent 1.2px);
+  background-size: 9px 9px;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-line) transparent;
+}
+
+/* Flechas del mapa: viajan por cada ruta, o quedan fijas si se pidió reducir el movimiento. */
+.flow-static {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flow-arrow {
+    display: none;
+  }
+  .flow-static {
+    display: inline;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .star-pulse {
+    animation: star-pulse 4s ease-in-out infinite;
+  }
+  .line-draw {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: line-draw 1.4s ease-out forwards;
+  }
+}
+
+@keyframes star-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.45; }
+}
+
+@keyframes line-draw {
+  to { stroke-dashoffset: 0; }
+}

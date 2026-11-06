@@ -1,0 +1,13 @@
+packages:
+  - web
+  - compiler
+
+# Ninguna dependencia necesita sus scripts de instalación: se bloquean y se dejan explícitos.
+ignoredBuiltDependencies:
+  - "@parcel/watcher"
+  - "@reown/appkit"
+  - "@swc/core"
+  - bufferutil
+  - fsevents
+  - secp256k1
+  - utf-8-validate

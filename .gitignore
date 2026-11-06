@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+.env*
+!.env.example
+web/public/vendor/
+web/src/templates/generated.ts
+target/
+.DS_Store
