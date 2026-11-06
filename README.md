@@ -162,9 +162,6 @@ No se aceptan cambios que activen mainnet.
 
 Los nombres locales del ahorro rotativo están en `web/src/lib/countries.ts`.
 
-## Marca
-
-El nombre y la marca de Constela son propios y no usan el logo de Stellar. Los colores y la tipografía siguen la guía de marca de Stellar 2026. Si usas el nombre o el logo de Stellar en un fork, revisa antes esa guía.
 
 ## Licencia
 
