@@ -8,9 +8,9 @@ IDE aberto no navegador para aprender a construir na Stellar, em espanhol e port
 
 **Funciona apenas na testnet.** A mainnet está desativada de propósito: o dinheiro é de teste e não tem valor.
 
-![Página inicial do Constela com o mapa das Américas](docs/landing.png)
+![Página inicial do Constela com o mapa das Américas](screenshots/landing-pt-BR.png)
 
-![IDE do Constela com o editor e o console](docs/ide.png)
+![IDE do Constela com o editor e o console](screenshots/ide-pt-BR.png)
 
 ## O que inclui
 
